@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name":    "ChromeShiftP",
+    "version": "0.0.1",
+    "offline_enabled": true,
+
+    "content_scripts": [{
+        "matches":    ["http://*/*", "https://*/*"],//["<all_urls>"],
+        "js":         ["./content_script.js"]
+    }],
+    "browser_action": {
+        "default_title": "Test Extension",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab","debugger"]
+}
