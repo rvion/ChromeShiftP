@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="vendors/jquery-2.1.1.min.js"></script>   
+    <script type="text/javascript" src="vendors/select2.min.js"></script>
     <script type="text/javascript" src="popup.js"></script>
+    <link   href="vendors/select2.css" rel="stylesheet"/>
+    <link   href="remi.css" rel="stylesheet"/>
   </head>
   <body>
     <h3 style="font-weight:bold; text-align:center;">Links</h3>
+    <select id="query">
+        <option value="AL">Alabama</option>
+        ...
+        <option value="WY">Wyoming</option>
+    </select>
     <div id="typedUrl_div"></div>
     <h3 style="font-weight:bold; text-align:center;">DOM Info</h3>
     <table border="1" cellpadding="3" style="border-collapse:collapse;">

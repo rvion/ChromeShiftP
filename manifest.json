@@ -5,7 +5,9 @@
     "offline_enabled": true,
 
     "content_scripts": [{
-        "matches":    ["http://*/*", "https://*/*"],//["<all_urls>"],
+        "matches": [
+            "http://*/*", "https://*/*"
+        ],//["<all_urls>"],
         "js":         ["./content_script.js"]
     }],
     "browser_action": {
