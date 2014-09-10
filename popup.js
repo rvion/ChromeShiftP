@@ -31,5 +31,9 @@ chrome.tabs.getSelected(null, function(tab) {
 });
 
 $(function(){
-  $("select#query").select2()
+  $("select#query").select2({
+    matcher: function(term, text, opt) {
+      return text.toUpperCase().match(term.toUpperCase().replace(/\s+/g, '.*'));
+    }
+  })
 })
